@@ -1,8 +1,8 @@
 function Bubble(x, y){
   this.x = x;
   this.y = y;
-  this.xspeed = random(15, -15);
-  this.yspeed = random(15, -15);
+  this.xspeed = 35;
+  this.yspeed = 35;
 
   this.show = function(){
     stroke(255);
