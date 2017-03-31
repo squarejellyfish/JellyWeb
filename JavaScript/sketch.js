@@ -10,6 +10,11 @@ function mousePressed(){
   bubble.push(b);
 }
 
+function mouseDragged(){
+  b = new Bubble(mouseX, mouseY);
+  bubble.push(b); 
+}
+
 function draw() {
   background(51);
   for(var i = 0; i < bubble.length; i++){
