@@ -29,7 +29,7 @@ Vehicle.prototype.show = function() {
     point(this.pos.x, this.pos.y);
 }
 
-Vehicle.prototype.arrive = function() {
+Vehicle.prototype.arrive = function(target) {
     var desired = p5.Vector.sub(target, this.pos);
     var d = desired.mag();
     var speed = this.maxspeed;
