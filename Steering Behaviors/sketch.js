@@ -18,6 +18,7 @@ function setup() {
     for (var i = 0; i < points.length; i++) {
         var p = points[i];
         var vehicle = new Vehicle(p.x, p.y);
+        vehicles.push(vehicle);
     }
 }
 
