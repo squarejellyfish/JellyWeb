@@ -19,6 +19,10 @@ function setup() {
     while (d < 500){
         textStart = width * 0.5;
         tsize *= 0.5;
+        if (textStart < 200) {
+            textStart = 100;
+            tsize = 150;
+        }
     }
 
     var points = font.textToPoints('Fuck', textStart, height / 2, tsize);
