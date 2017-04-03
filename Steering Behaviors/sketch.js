@@ -20,8 +20,7 @@ function setup() {
         textStart = width * 0.5;
         tsize *= 0.5;
         if (textStart < 200) {
-            textStart = 100;
-            tsize = 150;
+            break;
         }
     }
 
