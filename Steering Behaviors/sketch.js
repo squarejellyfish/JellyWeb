@@ -12,8 +12,16 @@ function setup() {
     // fill(255);
     // noStroke();
     // text('Fuck', 750, height / 2);
+    var textStart = width * 0.39;
+    var d = width - textStart;
+    var tsize = 250;
 
-    var points = font.textToPoints('Fucking', width * 0.39, height / 2, 250);
+    while (d < 500){
+        textStart = width * 0.7;
+        tsize *= 0.7;
+    }
+
+    var points = font.textToPoints('Fuck', textStart, height / 2, tsize);
 
     for (var i = 0; i < points.length; i++) {
         var p = points[i];
