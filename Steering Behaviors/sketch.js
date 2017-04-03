@@ -13,16 +13,7 @@ function setup() {
     // noStroke();
     // text('Fuck', 750, height / 2);
     var textStart = width * 0.39;
-    var d = width - textStart;
-    var tsize = 250;
-
-    while (d < 500){
-        textStart = width * 0.5;
-        tsize *= 0.5;
-        if (textStart < 200) {
-            break;
-        }
-    }
+    var tsize = width * 0.13;
 
     var points = font.textToPoints('Fuck', textStart, height / 2, tsize);
 
