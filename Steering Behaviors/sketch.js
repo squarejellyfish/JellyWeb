@@ -13,7 +13,7 @@ function setup() {
     // noStroke();
     // text('Fuck', 750, height / 2);
 
-    var points = font.textToPoints('Fuck', 750, height / 2, 250);
+    var points = font.textToPoints('Fuck', width * 0.39, height / 2, 250);
 
     for (var i = 0; i < points.length; i++) {
         var p = points[i];
@@ -24,7 +24,7 @@ function setup() {
 
 function draw() {
     background(51);
-    for(var i = 0; i < vehicles.length; i++){
+    for (var i = 0; i < vehicles.length; i++) {
         var v = vehicles[i];
         v.behaviors();
         v.update();
