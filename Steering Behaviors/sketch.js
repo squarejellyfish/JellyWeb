@@ -16,7 +16,7 @@ function setup() {
     var tsize = width * 0.13;
     console.log(tsize);
 
-    var points = font.textToPoints('Fuck', textStart, height / 2, tsize);
+    var points = font.textToPoints('Shawn', textStart, height / 2, tsize);
 
     for (var i = 0; i < points.length; i++) {
         var p = points[i];
